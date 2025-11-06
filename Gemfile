@@ -15,4 +15,4 @@ group :jekyll_plugins do
   gem "jekyll-feed"
 end
 
-gem "no-style-please"
+gem "no-style-please", "0.4.9"
