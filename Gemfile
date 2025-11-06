@@ -7,5 +7,3 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem "jekyll-feed"
 end
-
-gem "minima", github: "jekyll/minima", ref: "1e8a445"

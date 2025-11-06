@@ -40,7 +40,6 @@ defaults:
 # ===============================
 # MARKDOWN + BUILD
 # ===============================
-remote_theme: "jekyll/minima@1e8a445"
 markdown: kramdown
 kramdown:
   input: GFM
