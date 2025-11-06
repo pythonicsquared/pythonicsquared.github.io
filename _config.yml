@@ -40,6 +40,7 @@ defaults:
 # ===============================
 # MARKDOWN + BUILD
 # ===============================
+theme: no-style-please
 markdown: kramdown
 kramdown:
   input: GFM
@@ -74,7 +75,6 @@ quiet: false      # suppress non-critical messages if true
 # ===============================
 feed:
   collections:
-    - essays
 
 # ===============================
 # OPTIONAL SOCIAL PREVIEW (OG tags)
