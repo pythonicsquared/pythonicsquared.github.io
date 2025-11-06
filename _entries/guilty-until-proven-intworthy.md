@@ -107,8 +107,7 @@ x = round(float(s))  # Rounds 1.9 → 2
 
 **Comments (11):**
 
-**`@duckdev42`**
-
+> `@duckdev42:`
 > I solemnly swear I didn’t try to cast a string to an int before reading this… Python’s glare alone would’ve sentenced me. 😂
 
 **`@perl_ghost`**
