@@ -102,3 +102,55 @@ x = round(float(s))  # Rounds 1.9 → 2
 ## **Bash’s Closing – Moral of the Story**
 
 > **Bash**: “And so, dear coders, we learn the immutable truth: In Python, numbers are guilty until proven Intworthy. Strings may masquerade, floats may plead, but Int() will always truncate the unworthy. If you wish to survive the ritual, convert with care, round with deliberation, and always, always respect the explicitness of the language. And remember — while other languages shrug and coerce with abandon, Python demands ceremony, patience, and a touch of theatrical flair. Applaud, for you have witnessed the odyssey of numeric integrity.”
+
+---
+
+Absolutely! Here’s a playful, **fake comment section** for your satirical Python post — readers fully leaning into the theatrical, tongue-in-cheek vibe:
+
+---
+
+**Comments (11):**
+
+**`@duckdev42`**
+
+> I solemnly swear I didn’t try to cast a string to an int before reading this… Python’s glare alone would’ve sentenced me. 😂
+
+**`@perl_ghost`**
+
+> Ah, the old float → int truncation trick. I feel personally attacked… but entertained. Perl never judged me this harshly.
+
+**`@pythoniac101`**
+
+> *Enters stage left* Just to confirm — Python is basically the judge who brings a ruler to court? Love it.
+
+**`@rubyrebel`**
+
+> Ruby winks at me from the back row. I feel seen. 😎
+
+**`@noobcoder`**
+
+> Wait, am I supposed to follow the script, or can I improvise? The float → int scene gave me PTSD.
+
+**`@syntax_savant`**
+
+> Can someone explain the “Intworthy” verdict? Or is that intentionally dramatic suspense? Either way, bravo. 👏
+
+**`@duckdev42`**
+
+> I love how PHP is just lounging, smirking, doing whatever it wants. I aspire to that level of coercion.
+
+**`@quirky_quokka`**
+
+> I tried to exit stage right mid-Act II. The Python judge yelled at me. Can’t escape the drama.
+
+**`@lambda_lass`**
+
+> Can we have a spin-off: “Guilty Until Proven Listworthy”? I feel like lists are being underrepresented.
+
+**`@floatfan`**
+
+> That 1.9 → 1 truncation scene hit me harder than I expected. I need tissues. 💧
+
+**`@meta_mage`**
+
+> Just here for the ducks. 🦆 Periodical confirmed: true duck connoisseurs only.
