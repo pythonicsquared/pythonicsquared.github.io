@@ -1,0 +1,103 @@
+name: Build Archive of Now
+
+on:
+  push:
+    branches: [ "main" ]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # full history for commit date extraction
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1
+          bundler-cache: true
+
+      - name: Ensure Gemfile.lock is current
+        run: |
+          # Generate or update Gemfile.lock if needed
+          if [ ! -f Gemfile.lock ]; then
+            echo "No Gemfile.lock found — generating..."
+            bundle lock
+            changed=1
+          else
+            echo "Gemfile.lock exists — checking for Gemfile changes..."
+            # Bundler will quietly update lockfile if Gemfile changed
+            bundle lock --update --conservative || true
+            if [ ! -f Gemfile.lock ] || ! git ls-files --error-unmatch Gemfile.lock >/dev/null 2>&1 || ! git diff --quiet Gemfile.lock; then
+              echo "Gemfile.lock created or updated."
+              changed=1
+            else
+              echo "Gemfile.lock up-to-date."
+              changed=0
+            fi
+          fi
+
+          if [ "$changed" = "1" ]; then
+            echo "Committing Gemfile.lock changes..."
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add Gemfile.lock
+            git commit -m "Auto-update Gemfile.lock [skip ci]" || echo "No changes to commit"
+            # Only push on main/default branch
+            if [[ "${GITHUB_REF##*/}" == "main" || "${GITHUB_REF##*/}" == "master" ]]; then
+              git push origin HEAD || echo "Push skipped (no permission or PR build)"
+            else
+              echo "Not on default branch — skip push."
+            fi
+          fi
+
+
+      - name: Inject published and modified dates
+        run: |
+          for f in $(find _essays -name "*.md"); do
+            # Get first (added) commit date
+            published=$(git log --diff-filter=A --follow --format=%cI -- "$f" | tail -1)
+            # Get last (most recent) commit date
+            modified=$(git log -1 --format=%cI -- "$f")
+            # Fallback in case published is empty
+            [ -z "$published" ] && published=$modified
+
+            # Remove any existing injected lines for idempotency
+            sed -i '/^date: /d' "$f"
+            sed -i '/^last_modified_at: /d' "$f"
+
+            # Insert at the top, after opening front matter delimiter
+            awk -v pub="$published" -v mod="$modified" '
+              NR==1{print; print "date: " pub; print "last_modified_at: " mod; next}1
+            ' "$f" > tmp && mv tmp "$f"
+          done
+
+      - name: Build site
+        run: bundle exec jekyll build --trace --verbose
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

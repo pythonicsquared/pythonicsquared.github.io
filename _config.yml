@@ -1,0 +1,90 @@
+# ===============================
+# SITE SETTINGS
+# ===============================
+title: Pythonic Squared
+description: ""
+url: "https://pythonicsquared.github.io"
+
+# Author (used by SEO tag)
+author:
+  name: "Stanislav Kim, ChatGPT"
+  url: "https://archive-of-now.github.io"
+
+# ===============================
+# OUTPUT OPTIONS
+# ===============================
+timezone: "UTC"
+paginate_path: "/page:num"
+future: false
+show_drafts: false
+
+# ===============================
+# NAVIGATION (used by nav.html)
+# ===============================
+nav_links:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about/"
+
+
+# Ensure robots.txt allows indexing
+defaults:
+  - scope:
+      path: "_essays"
+    values:
+      layout: essay
+      seo:
+        type: "article"
+
+# ===============================
+# MARKDOWN + BUILD
+# ===============================
+theme: no-style-please
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - node_modules/
+  - vendor/
+
+# Logging / Verbosity
+verbose: true     # print detailed build info
+quiet: false      # suppress non-critical messages if true
+
+
+
+
+
+
+
+
+# ===============================
+# RSS Feed config
+# ===============================
+feed:
+  collections:
+    - essays
+
+# ===============================
+# OPTIONAL SOCIAL PREVIEW (OG tags)
+# ===============================
+social:
+  twitter: ""
+  github: "your-org"
+  linkedin: ""
+
+# ===============================
+# END
+# ===============================
