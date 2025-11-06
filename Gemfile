@@ -5,7 +5,7 @@ source "https://rubygems.org"
 # https://github.com/devcontainers/images/blob/main/src/jekyll/.devcontainer/Dockerfile
 # https://github.com/jekyll/jekyll/pull/8939#issuecomment-1541488479
 gem "sass-embedded", "1.62.1"
-gem "jekyll-sass-converter", "3.0.0"
+gem "jekyll-sass-converter", "1.0"
 
 # no-style-please dose not support 4.x
 gem "jekyll", "~> 3.10"
