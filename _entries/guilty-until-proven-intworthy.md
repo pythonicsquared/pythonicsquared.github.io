@@ -105,10 +105,6 @@ x = round(float(s))  # Rounds 1.9 → 2
 
 ---
 
-Absolutely! Here’s a playful, **fake comment section** for your satirical Python post — readers fully leaning into the theatrical, tongue-in-cheek vibe:
-
----
-
 **Comments (11):**
 
 **`@duckdev42`**
