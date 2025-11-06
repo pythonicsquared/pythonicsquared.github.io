@@ -40,9 +40,9 @@ nav_links:
 # Ensure robots.txt allows indexing
 defaults:
   - scope:
-      path: "_essays"
+      path: "_entries"
     values:
-      layout: essay
+      layout: entry
       seo:
         type: "article"
 

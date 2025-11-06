@@ -14,7 +14,7 @@ layout: home
   {% for entry in entries %}
     {% unless entry.path contains 'index.md' %}
       <li>
-        <h2><a href="{{ essay.url | relative_url }}">{{ entry.title }}</a></h2>
+        <h2><a href="{{ entry.url | relative_url }}">{{ entry.title }}</a></h2>
         <p>{{ entry.description | default: entry.excerpt }}</p>
       </li>
     {% endunless %}

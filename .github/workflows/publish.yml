@@ -65,7 +65,7 @@ jobs:
 
       - name: Inject published and modified dates
         run: |
-          for f in $(find _essays -name "*.md"); do
+          for f in $(find _entries -name "*.md"); do
             # Get first (added) commit date
             published=$(git log --diff-filter=A --follow --format=%cI -- "$f" | tail -1)
             # Get last (most recent) commit date
