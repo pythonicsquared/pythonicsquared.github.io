@@ -3,6 +3,7 @@ source "https://rubygems.org"
 # No longer part of standard library
 gem "logger"
 gem "base64"
+gem "bigdecimal"
 
 # Ruby SASS
 # https://github.com/devcontainers/images/blob/main/src/jekyll/.devcontainer/Dockerfile
