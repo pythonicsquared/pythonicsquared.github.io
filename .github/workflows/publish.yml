@@ -25,6 +25,7 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.1.4
+          bundler-cache: false
 
       - run: bundle config set force_ruby_platform true
       - run: bundle install
