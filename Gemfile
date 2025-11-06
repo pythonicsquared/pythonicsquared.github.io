@@ -4,6 +4,7 @@ source "https://rubygems.org"
 # https://github.com/devcontainers/images/blob/main/src/jekyll/.devcontainer/Dockerfile
 # https://github.com/devcontainers/images/blob/main/src/jekyll/.devcontainer/Dockerfile
 # https://github.com/jekyll/jekyll/pull/8939#issuecomment-1541488479
+gem "google-protobuf", "3.24"
 gem "sass-embedded", "1.62.1"
 gem "jekyll-sass-converter", "1.0"
 
