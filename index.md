@@ -1,4 +1,7 @@
 ---
 permalink: /
+layout: post
+title: Pythonic Squared
 ---
-<h1>Pythonic Squared</h1>
+
+coming soon
