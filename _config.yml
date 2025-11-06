@@ -10,6 +10,10 @@ author:
   name: "Stanislav Kim, ChatGPT"
   url: "https://pythonicsquared.github.io"
 
+goat_counter: pythonicsquared
+custom_js:
+  - custom.js
+
 # ===============================
 # OUTPUT OPTIONS
 # ===============================
@@ -64,12 +68,6 @@ verbose: true     # print detailed build info
 quiet: false      # suppress non-critical messages if true
 
 
-
-
-
-
-
-
 # ===============================
 # RSS Feed config
 # ===============================
@@ -83,7 +81,3 @@ social:
   twitter: ""
   github: "your-org"
   linkedin: ""
-
-# ===============================
-# END
-# ===============================

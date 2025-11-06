@@ -4,32 +4,13 @@
 {% else %}
     <h2><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h2>
 {% endif %}
-    <div class="site-tagline">
-        <div class="site-tagline-item">A</div>
-        <div class="site-tagline-item">B</div>
-        <div class="site-tagline-item">C</div>
-        <div class="site-tagline-item">D</div>
-    </div>
-    <style>
-        .site-tagline-item {display: none}
-    </style>
-    <script>
-        (function() {
-            const items = document.querySelectorAll('.site-tagline-item');
-
-            function showRandomTagline() {
-                // Hide all
-                items.forEach(el => el.style.display = 'none');
-                // Pick a random index
-                const index = Math.floor(Math.random() * items.length);
-                // Show that tagline
-                items[index].style.display = 'block';
-            }
-
-            // Initial display
-            showRandomTagline();
-            // Rotate every 20 seconds (20000 ms)
-            setInterval(showRandomTagline, 20000);
-        })();
-    </script>
+<div class="site-tagline" style="display: none;">
+    <div class="site-tagline-item">A Periodical for True Duck Connoisseurs.</div>
+    <div class="site-tagline-item">Encoding Semantics, One Underscore at a Time</div>
+    <div class="site-tagline-item">Python, But Make It Meta</div>
+    <div class="site-tagline-item">Readability, Elevated to the Absurd</div>
+    <div class="site-tagline-item">Turning Zen into Chaos</div>
+    <div class="site-tagline-item">UX button masher goes to the Snake-land</div>
+    <div class="site-tagline-item">Where PEPs Fear to Tread</div>
+</div>
 </header>
