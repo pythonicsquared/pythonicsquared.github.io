@@ -7,7 +7,8 @@ source "https://rubygems.org"
 gem "sass-embedded", "1.62.1"
 gem "jekyll-sass-converter", "3.0.0"
 
-gem "jekyll", "~> 4.4.0"
+# no-style-please dose not support 4.x
+gem "jekyll", "~> 3.10"
 
 group :jekyll_plugins do
   gem "jekyll-seo-tag"
