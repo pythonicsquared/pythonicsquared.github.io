@@ -1,4 +1,4 @@
-name: Build & Publish
+name: Build Archive of Now
 
 on:
   push:
@@ -22,13 +22,11 @@ jobs:
         with:
           fetch-depth: 0  # full history for commit date extraction
 
-      - uses: ruby/setup-ruby@v1
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1.4
-          bundler-cache: false
-
-      - run: bundle config set force_ruby_platform true
-      - run: bundle install
+          ruby-version: 3.1
+          bundler-cache: true
 
       - name: Ensure Gemfile.lock is current
         run: |
