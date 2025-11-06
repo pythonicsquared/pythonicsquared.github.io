@@ -107,45 +107,35 @@ x = round(float(s))  # Rounds 1.9 → 2
 
 **Comments (11):**
 
-> `@duckdev42:`
+> `@duckdev42`:
 > I solemnly swear I didn’t try to cast a string to an int before reading this… Python’s glare alone would’ve sentenced me. 😂
 
-**`@perl_ghost`**
-
+> `@perl_ghost`:
 > Ah, the old float → int truncation trick. I feel personally attacked… but entertained. Perl never judged me this harshly.
 
-**`@pythoniac101`**
-
+> `@pythoniac101`:
 > *Enters stage left* Just to confirm — Python is basically the judge who brings a ruler to court? Love it.
 
-**`@rubyrebel`**
-
+> `@rubyrebel`:
 > Ruby winks at me from the back row. I feel seen. 😎
 
-**`@noobcoder`**
-
+> `@noobcoder`:
 > Wait, am I supposed to follow the script, or can I improvise? The float → int scene gave me PTSD.
 
-**`@syntax_savant`**
-
+> `@syntax_savant`:
 > Can someone explain the “Intworthy” verdict? Or is that intentionally dramatic suspense? Either way, bravo. 👏
 
-**`@duckdev42`**
-
+> `@duckdev42`:
 > I love how PHP is just lounging, smirking, doing whatever it wants. I aspire to that level of coercion.
 
-**`@quirky_quokka`**
-
+> `@quirky_quokka`:
 > I tried to exit stage right mid-Act II. The Python judge yelled at me. Can’t escape the drama.
 
-**`@lambda_lass`**
-
+> `@lambda_lass`:
 > Can we have a spin-off: “Guilty Until Proven Listworthy”? I feel like lists are being underrepresented.
 
-**`@floatfan`**
-
+> `@floatfan`:
 > That 1.9 → 1 truncation scene hit me harder than I expected. I need tissues. 💧
 
-**`@meta_mage`**
-
+> `@meta_mage`:
 > Just here for the ducks. 🦆 Periodical confirmed: true duck connoisseurs only.
