@@ -14,6 +14,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initial display
     showRandomTagline();
-    // Rotate every 20 seconds (20000 ms)
-    setInterval(showRandomTagline, 20000);
+    setInterval(showRandomTagline, 10000);
 });
