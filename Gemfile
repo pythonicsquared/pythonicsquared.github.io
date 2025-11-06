@@ -11,6 +11,7 @@ gem "bigdecimal"
 gem "google-protobuf", "3.24"
 gem "sass-embedded", "1.62.1"
 gem "jekyll-sass-converter", "1.0"
+gem "kramdown-parser-gfm"
 
 # no-style-please dose not support 4.x
 gem "jekyll", "~> 3.10"
