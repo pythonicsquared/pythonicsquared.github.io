@@ -1,4 +1,4 @@
-name: Build Archive of Now
+name: Build & Publish
 
 on:
   push:
