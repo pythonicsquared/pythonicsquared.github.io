@@ -1,7 +1,10 @@
 source "https://rubygems.org"
 
+# No longer part of standard library
+gem "logger"
+gem "base64"
+
 # Ruby SASS
-# https://github.com/devcontainers/images/blob/main/src/jekyll/.devcontainer/Dockerfile
 # https://github.com/devcontainers/images/blob/main/src/jekyll/.devcontainer/Dockerfile
 # https://github.com/jekyll/jekyll/pull/8939#issuecomment-1541488479
 gem "google-protobuf", "3.24"
