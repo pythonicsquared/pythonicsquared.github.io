@@ -1,16 +1,22 @@
 ---
-title: PEP 8.1 Semantic Underscores – Python Variable Naming Guide
+title: PEP8 is NOT good enough!
 description: |
-    a Pythonic guide to semantic underscores inside variable and function names.
+    A Pythonic guide to semantic underscores inside variable and function names.
     Improve code readability and convey mutability in your Python projects.
 ---
 
+
+## RFC
 ## PEP 8.1 – Semantic Underscores for Variable and Function Names
 
 **Author:** Pythonic Squared
+
 **Status:** Draft
+
 **Type:** Informational
+
 **Created:** 2025-11-06
+
 **Python-Version:** 3.x
 
 ---
