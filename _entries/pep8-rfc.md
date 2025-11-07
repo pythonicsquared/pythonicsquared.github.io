@@ -19,13 +19,11 @@ description: |
 
 **Python-Version:** 3.x
 
----
 
 ## Abstract
 
 This PEP proposes a naming convention that embeds **semantic information about mutability and complexity** directly into variable and function names. The proposal maintains compliance with existing PEP8 rules while providing guidance for improved readability, particularly in codebases with nested or complex structures.
 
----
 
 ## 1. Rationale
 
@@ -33,27 +31,29 @@ PEP8 provides guidance on naming conventions, whitespace, and general style, but
 
 PEP 8.1 introduces **semantic underscores** placed **inside snake_case names**, providing a structured and consistent mechanism to communicate variable semantics while remaining fully compliant with existing PEP8 rules. This approach improves **readability and maintainability**, particularly in codebases with nested or complex data structures.
 
----
 
 ## 2. Semantic Underscore Convention
 
 **Scope:** Semantic underscores appear **inside snake_case names**. Leading or trailing underscores remain reserved for Python’s special methods and attributes.
 
 | Semantic Underscore | Meaning                                  |
-| ------------------- | ---------------------------------------- |
-| `_` inside name     | Immutable value                          |
-| `__` inside name    | Mutable value                            |
-| `___` inside name   | Compound structure (e.g., dict of dicts, |
-|                     | nested lists)                            |
-| `____` inside name  | Class instance                           |
+| ------------------- | --------------------------- |
+| _      | Immutable value                          |
+| __     | Mutable value                            |
+| ___    | Compound structure (e.g., dict of dicts, nested lists)    |
+| ____   | Class instance                           |
 
 **Examples:**
 
 ```python
-pi_single = 3.14159                  # Immutable (_ inside name)
-counter__mutable = 0                  # Mutable (__ inside name)
-config___nested = {'db': {'host': 'localhost'}}  # Nested structures (___ inside name)
-user____instance = User('Alice')      # Class instance (____ inside name)
+pi_single = 3.14159                  # Immutable
+counter__mutable = 0                 # Mutable
+config___nested = {                  # Nested structures
+    'db': {
+        'host': 'localhost'
+    }
+}
+user____instance = User('Alice')     # Class instance
 ```
 
 **Notes:**
@@ -62,7 +62,6 @@ user____instance = User('Alice')      # Class instance (____ inside name)
 * Leading or trailing underscores retain their usual meaning; this PEP does not assign semantic meaning to them.
 * The convention applies equally to **all variables and functions**, independent of public or private scope.
 
----
 
 ## 3. Implementation
 
@@ -70,13 +69,11 @@ user____instance = User('Alice')      # Class instance (____ inside name)
 * **Tooling support:** Linters and IDEs may provide warnings when semantic underscores are misused or inconsistent.
 * **Optional adoption:** While recommended for clarity, semantic underscores are informational and do not affect runtime behavior.
 
----
 
 ## 4. Compatibility
 
 This proposal does **not change Python syntax or semantics** and is fully compatible with existing PEP8 naming conventions. No runtime behavior is affected.
 
----
 
 ## 5. Conclusion
 
