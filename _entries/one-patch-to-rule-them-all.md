@@ -100,58 +100,58 @@ index 0bb71cb..ee82d77 100644
 
 **Comments(17):**
 
-`@indentationEnthusiast`:
-Bold move. Finally someone has the courage to address Python’s iterator problem head-on instead of pretending “lazy evaluation” is a feature and not an elaborate prank from the Guido era.
+> `@indentationEnthusiast`:
+> Bold move. Finally someone has the courage to address Python’s iterator problem head-on instead of pretending “lazy evaluation” is a feature and not an elaborate prank from the Guido era.
 
-`@yieldFromMyColdDeadHands`:
-As a generator enjoyer, I consider this patch a personal attack. But also… I can’t stop laughing. Please submit to python-ideas immediately.
+> `@yieldFromMyColdDeadHands`:
+> As a generator enjoyer, I consider this patch a personal attack. But also… I can’t stop laughing. Please submit to python-ideas immediately.
 
-`@theZenOfNope`:
-“Now is better than never.”
-“But never is often better than *right now*.”
-I feel like this patch lives spiritually between those two lines, vibrating slightly.
+> `@theZenOfNope`:
+> “Now is better than never.”
+> “But never is often better than *right now*.”
+> I feel like this patch lives spiritually between those two lines, vibrating slightly.
 
-`@deepcopydeepstate`:
-This will increase global RAM usage by approximately 700%. Which, as we all know, brings Python perfectly in line with its mission statement of “simple is better than fast.”
+> `@deepcopydeepstate`:
+> This will increase global RAM usage by approximately 700%. Which, as we all know, brings Python perfectly in line with its mission statement of “simple is better than fast.”
 
-`@byte_me_pls`:
-Finally, deterministic behavior. I’ve always wanted `dict.keys()` to behave like `sorted()` even when I don’t call `sorted()`. Truly inspirational.
+> `@byte_me_pls`:
+> Finally, deterministic behavior. I’ve always wanted `dict.keys()` to behave like `sorted()` even when I don’t call `sorted()`. Truly inspirational.
 
-`@mapFilterZipFanclub`:
-You can pry lazy sequences from my cold, exhausted hands. My 30GB dataset loading script started screaming when I read this.
+> `@mapFilterZipFanclub`:
+> You can pry lazy sequences from my cold, exhausted hands. My 30GB dataset loading script started screaming when I read this.
 
-`@snakeTheorist`:
-The filename paths being accurate really sell it. I’ve seen PEPs with less commitment.
+> `@snakeTheorist`:
+> The filename paths being accurate really sell it. I’ve seen PEPs with less commitment.
 
-`@thatOneCoreDev`:
-This is going to get sent to me internally with “thoughts?” and I will have to pretend to not enjoy it.
+> `@thatOneCoreDev`:
+> This is going to get sent to me internally with “thoughts?” and I will have to pretend to not enjoy it.
 
-`@cursedSyntaxArchivist`:
-I, for one, welcome our new list-materializing overlords.
+> `@cursedSyntaxArchivist`:
+> I, for one, welcome our new list-materializing overlords.
 
-`@loopHero`:
-Just tried to imagine `range()` returning a list on every invocation and passed out briefly.
+> `@loopHero`:
+> Just tried to imagine `range()` returning a list on every invocation and passed out briefly.
 
-`@literalist42`:
-Isn’t this basically what JavaScript would do? Truly Python is evolving.
+> `@literalist42`:
+> Isn’t this basically what JavaScript would do? Truly Python is evolving.
 
-`@returnSelfButDifferent`:
-You forgot to replace `itertools` with one big `flatten(list())` call. Inconsistent. 0/10.
+> `@returnSelfButDifferent`:
+> You forgot to replace `itertools` with one big `flatten(list())` call. Inconsistent. 0/10.
 
-`@pettyCompilerSpirit`:
-I want to disagree with this patch but I’m honestly impressed with the dedication. It’s like watching someone build a cathedral entirely out of duct tape.
+> `@pettyCompilerSpirit`:
+> I want to disagree with this patch but I’m honestly impressed with the dedication. It’s like watching someone build a cathedral entirely out of duct tape.
 
-`@docsOrItDidntHappen`:
-The release notes for 3.14 are going to be wild.
+> `@docsOrItDidntHappen`:
+> The release notes for 3.14 are going to be wild.
 
-`@comicallyPedantic`:
-Actually, according to the original Python philosophy, consistency is—
-(*comment removed by moderator*)
+> `@comicallyPedantic`:
+> Actually, according to the original Python philosophy, consistency is—
+> (*comment removed by moderator*)
 
-`@ghostOfTimSort`:
-If this goes through, I demand we rename Python to “Lists”. Just Lists.
+> `@ghostOfTimSort`:
+> If this goes through, I demand we rename Python to “Lists”. Just Lists.
 
-`@zenMasterOfMutableState`:
-This is the funniest thing I’ve seen all week. Also terrifying. But mostly funny.
+> `@zenMasterOfMutableState`:
+> This is the funniest thing I’ve seen all week. Also terrifying. But mostly funny.
 
 ---
