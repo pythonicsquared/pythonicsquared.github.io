@@ -1,0 +1,55 @@
+---
+permalink: /comments/submit.php.html
+layout: default
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Submit Your Comment… If You Dare</title>
+<style>
+body { font-family: monospace; background: #f7f7f7; color: #222; text-align: center; padding: 2rem; }
+input, textarea { width: 80%; margin: 0.5rem 0; padding: 0.5rem; }
+button { padding: 0.5rem 1rem; cursor: pointer; }
+.snake { font-size: 2rem; }
+</style>
+</head>
+<body>
+
+<h1>🐍 Python Comments Submission Portal</h1>
+<p>Yes, this is PHP. No, we don’t care. Pythonistas welcome.</p>
+
+<form id="commentForm">
+    <input type="text" id="username" placeholder="Your Python Alias"><br>
+    <textarea id="comment" placeholder="import this…"></textarea><br>
+    <button type="submit">Submit Comment</button>
+</form>
+
+<div id="response" class="snake"></div>
+
+<script>
+const zen = [
+  "Beautiful is better than ugly.",
+  "Explicit is better than implicit.",
+  "Comments are good… but only if they follow PEP 8.",
+  "Whitespace matters, unlike semicolons.",
+  "Errors should never pass silently… unless you’re in PHP."
+];
+
+document.getElementById('commentForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const user = document.getElementById('username').value || "Anonymous Pythonista";
+    const msg = document.getElementById('comment').value || "…silence…";
+    const zenMsg = zen[Math.floor(Math.random() * zen.length)];
+
+    document.getElementById('response').innerHTML = `
+        <p>Python says: <strong>${user}</strong>, your comment has been interpreted and passed through the GIL. 🐍</p>
+        <p>You wrote: "${msg}"</p>
+        <p>Zen says: "${zenMsg}"</p>
+        <p>Also: yes, PHP exists here, but we pretend it’s just a Python decorator gone rogue.</p>
+    `;
+});
+</script>
+
+</body>
+</html>
