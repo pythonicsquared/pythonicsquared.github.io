@@ -41,7 +41,7 @@ PEP 8.1 introduces **semantic underscores** placed **inside snake_case names**, 
 | _      | Immutable value                          |
 | __     | Mutable value                            |
 | ___    | Compound structure (e.g., dict of dicts, nested lists)    |
-| ____   | Class instance                           |
+| ________   | Class instance                           |
 
 **Examples:**
 
